@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import sg.edu.np.mad.practical2.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         });
         User user = new User("Rena Soong", "MAD Developer", 1, false);
 
-        TextView tvName = findViewById(R.id.tvName);
+        TextView tvName = findViewById(R.id.tvname);
         TextView tvDescription = findViewById(R.id.tvDescription);
-        Button btnFollowed = findViewById(R.id.btnFollowed);
+        Button btnFollow = findViewById(R.id.btnFollow);
 
         tvName.setText(user.name);
         tvDescription.setText(user.description);
